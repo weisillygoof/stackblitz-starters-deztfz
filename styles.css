@@ -9,17 +9,31 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  font-size: xx-large;
-  text-decoration: none;
-  background-color: transparent;
-  color: black;
-  width: 99%;
-  flex-grow: 1 1 1 1;
+  width: 100%;
+  flex: 1 2 1 1;
   position: absolute;
   justify-content: space-between;
   gap: 6px;
   align-items:center;
   border-bottom: 1px color (0,9,9);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  font-size: xx-large;
+}
+
+
+.navbar a {
+  font-size: xx-large;
+  font-family: 'Bayfont', cursive;
+  text-decoration: none;
+  text-shadow:
+  -1px -1px 0  rgb(131, 21, 21),
+  1px -1px 0  rgb(139, 8, 8),
+  -1px 1px 0  rgb(175, 100, 100),
+  1px 1px 0  rgb(215, 83, 83);  
 }
 
 .navimg {
@@ -28,12 +42,13 @@ width: 80px;
 
 .navbutton {
   padding: 0.75rem;
-  outline: none;
-  border: 3px: color(0,0,0);
+  outline: 3px;
+  border: 3px;
+  color:black;
   font-size: 25px;
   color: var(--extra-light);
   background-color: rgb(105, 13, 13);
-  border-radius: 5rem;
+  border-radius: 2rem;
   cursor: pointer;
   transition: 0.3;
   z-index: 10;
@@ -54,10 +69,112 @@ width: 80px;
   max-width: 100%;
 }
 
-.BayonettaLogo {
-  display: flex;
-  flex-direction: row;
+
+@font-face {
+  font-family: 'Bayfont';
+  src: url('/font/Bayonetta.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+body {
+  font-family: 'Bayfont', sans-serif;
+}
+
+.Bayotext {
+  font-family: 'Bayfont';
+  font-size: 50px;
+  color: rgb(26, 5, 5);
+  text-shadow:
+  -1px -1px 0  rgb(131, 21, 21),
+  1px -1px 0  rgb(139, 8, 8),
+  -1px 1px 0  rgb(175, 100, 100),
+  1px 1px 0  rgb(215, 83, 83);  
+}
+
+br {
+  display: block;
+  margin: 20px 0;
+}
+
+
+.Bayonetta1,
+.Bayonetta2,
+.Bayonetta3 {
+    width: 30%;
+}
+
+.Bayonetta1 {
+  display: inline-flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: left;
+}
+
+.Bayonetta1 p {
+  font-family: 'Bayfont';
+  font-size: 35px;
+  text-shadow:
+  -1px -1px 0  rgb(131, 21, 21),
+  1px -1px 0  rgb(139, 8, 8),
+  -1px 1px 0  rgb(175, 100, 100),
+  1px 1px 0  rgb(215, 83, 83);  
+  text-align: center;
+}
+
+.Bayonetta1 img {
+  align-items: center;
+  height: auto;
+  flex-shrink: 1;
+  max-width: 100%;
+} 
+
+.Bayonetta2 {
+  display: inline-flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
-  width: 30%;
 }
+
+.Bayonetta2 p {
+  font-family: 'Bayfont';
+  font-size: 35px;
+  text-shadow:
+  -1px -1px 0  rgb(6, 15, 52),
+  1px -1px 0  rgb(183, 174, 247),
+  -1px 1px 0  rgb(172, 194, 236),
+  1px 1px 0  rgb(195, 207, 236);  
+  text-align: center;
+}
+
+.Bayonetta2 img {
+  align-items: center;
+  height: auto;
+  flex-shrink: 1;
+  max-width: 100%;
+} 
+
+.Bayonetta3 {
+  display: inline-flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bayonetta3 p {
+  font-family: 'Bayfont';
+  font-size: 35px;
+  text-shadow:
+  -1px -1px 0  rgb(6, 15, 52),
+  1px -1px 0  rgb(132, 121, 215),
+  -1px 1px 0  rgb(162, 188, 235),
+  1px 1px 0  rgb(195, 207, 236);  
+  text-align: center;
+}
+
+.Bayonetta3 img {
+  align-items: center;
+  height: auto;
+  flex-shrink: 1;
+  max-width: 100%;
+} 
